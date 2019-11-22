@@ -8,7 +8,6 @@ public class GeradorDeInimigos : MonoBehaviour
 
     public GameObject inimigo;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +25,9 @@ public class GeradorDeInimigos : MonoBehaviour
         int sorteio = Random.Range(0,spawnpoint.Length);
 
         GameObject instance = Instantiate(inimigo, spawnpoint[sorteio].position, Quaternion.identity);
+        Inimigo inimigoAtual = instance.GetComponent<Inimigo>();
+
+        int sortInimigo = Random.Range(0,inimigoAtual.modelos.Length);
+        inimigoAtual.ativarModelo(sortInimigo);
     }
 }
