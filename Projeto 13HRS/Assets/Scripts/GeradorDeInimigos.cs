@@ -29,5 +29,10 @@ public class GeradorDeInimigos : MonoBehaviour
 
         int sortInimigo = Random.Range(0,inimigoAtual.modelos.Length);
         inimigoAtual.ativarModelo(sortInimigo);
+
+        if (sortInimigo % 2 != 0)
+        {
+            inimigoAtual.letal=true;
+        }
     }
 }
