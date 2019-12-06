@@ -146,6 +146,8 @@ MonoBehaviour:
   pontos: 0
   caixadesom: {fileID: 507977307}
   somDoTiro: {fileID: 8300000, guid: df5ae9509b3d2614cabd33da7707ea8e, type: 3}
+  somQuandoOInimigoMorre: {fileID: 8300000, guid: 29d7430d9cb1b674aab002172dfd6136,
+    type: 3}
 --- !u!1 &621647274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,15 +1030,15 @@ RectTransform:
   m_GameObject: {fileID: 1642419741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1700344016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -580, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642419743
 MonoBehaviour:
@@ -1051,7 +1053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6179246, g: 0.74528307, b: 1, a: 1}
+  m_Color: {r: 0.42065597, g: 0.9339623, b: 0.2687344, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

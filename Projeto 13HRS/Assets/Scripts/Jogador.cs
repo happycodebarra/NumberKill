@@ -9,6 +9,7 @@ public class Jogador : MonoBehaviour
 
     public AudioSource caixadesom;
     public AudioClip somDoTiro;
+    public AudioClip somQuandoOInimigoMorre;
     
     private void OnCollisionEnter(Collision collision)
     {
@@ -45,6 +46,7 @@ public class Jogador : MonoBehaviour
             if (hit.transform.gameObject.tag == "Inimigo")
             {
                 Destroy(hit.transform.gameObject);
+                caixadesom.PlayOneShot(somQuandoOInimigoMorre);
             }
         }
     }
