@@ -25,9 +25,7 @@ public class Jogador : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {
             tiro();
-        }
     }
 
     void tiro ()

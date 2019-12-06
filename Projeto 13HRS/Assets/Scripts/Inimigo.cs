@@ -16,6 +16,11 @@ public class Inimigo : MonoBehaviour
         modelos[ID].SetActive(true);
     }
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     private void Update()
     {
         inimigo.SetDestination(player.position);
