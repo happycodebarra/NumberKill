@@ -6,6 +6,9 @@ public class Jogador : MonoBehaviour
 {
     public int vida;
     public int pontos;
+
+    public AudioSource caixadesom;
+    public AudioClip somDoTiro;
     
     private void OnCollisionEnter(Collision collision)
     {
@@ -26,11 +29,15 @@ public class Jogador : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
             tiro();
+            
     }
 
     void tiro ()
     {
         RaycastHit hit;
+
+        caixadesom.PlayOneShot(somDoTiro);
+
         if ( Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit , 1000))
         {
             Debug.Log(hit.transform.name);
