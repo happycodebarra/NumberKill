@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7560789026181336368}
   m_Layer: 0
   m_Name: inimigo
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7672d6b52ae1245bad3c680141047c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  inimigo: {fileID: 0}
   modelos:
   - {fileID: 7560789025922416104}
   - {fileID: 7560789025360864850}
@@ -126,6 +128,7 @@ MonoBehaviour:
   - {fileID: 7560789025911008331}
   - {fileID: 7560789026110834764}
   - {fileID: 7560789025331663105}
+  letal: 0
 --- !u!1001 &7560789024069962615
 PrefabInstance:
   m_ObjectHideFlags: 0
